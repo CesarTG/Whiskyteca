@@ -1,10 +1,11 @@
 import './App.css';
-import './components/clase1/NavBar.css'
-import {MiPrimerComponente} from "./components/clase1/NavBar"
-
+import './components/NavBar/NavBar.css'
+import {NavBar} from "./components/NavBar/NavBar"
 
 function App() {
-  return <MiPrimerComponente/>;
+
+  return <NavBar/>;
+  
 }
 
 export default App;
