@@ -10,7 +10,16 @@ nav {
     justify-content: space-between;
 }
 
-h1 {
+@media only screen and (max-width: 768px){
+    nav {
+        background-color: rgb(100, 100, 100);
+        display: block;        
+        align-items: center;        
+    }    
+}
+
+.titulo {
+    color: rgb(0, 0, 0);
     padding: 1rem;
 }
 
@@ -22,7 +31,7 @@ h1 {
 .lista li {
     margin: 1rem;
     padding: 0 1rem;
-    background-color: rgb(243, 229, 101);
+    background-color: rgb(75, 106, 243);
     list-style: none;
 }
 
