@@ -1,10 +1,12 @@
 import React from "react";
+import { ItemListContainer } from "../ItemListContainer/ItemListContainer";
+
 
 export const NavBar = (props) => {
 
     const { children } = props;
 
-    return <nav>
+    return <div><nav>
         <h1 className="titulo">Whiskyteca</h1>
 
         <ul className="lista">
@@ -19,5 +21,8 @@ export const NavBar = (props) => {
             </li>
             {children}
         </ul>
-    </nav>;
+        
+    </nav>
+    <ItemListContainer/></div>
+    ;
 }
