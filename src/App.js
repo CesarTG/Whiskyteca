@@ -5,7 +5,9 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 
 function App() {
 
-  return <NavBar/>; 
+  return <><NavBar/>
+  <ItemListContainer texto="whiskys para toda la familia!. "/>
+  </>; 
 }
 
 export default App;

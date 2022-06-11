@@ -1,6 +1,14 @@
-import React from "react";
+export const ItemListContainer = (props) => {
 
-export const ItemListContainer = () => {
+    const {texto} = props;   
+    return <section>
+        <Textual parrafo={texto}/>
+    </section>
+}
 
-    return <p>Aqui  vas a ver proximamente, una Grid con imagenes de whiskys bien baratos!. </p>;
+const Textual = (props) => {
+
+    return<>
+    <h2>{ props.parrafo}</h2>
+    </>
 }
