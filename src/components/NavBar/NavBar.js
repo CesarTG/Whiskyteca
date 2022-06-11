@@ -1,12 +1,9 @@
 import React from "react";
-import { ItemListContainer } from "../ItemListContainer/ItemListContainer";
+import { CartWidget } from "../CartWidget/CarWidget";
 
+export const NavBar = () => {
 
-export const NavBar = (props) => {
-
-    const { children } = props;
-
-    return <div><nav>
+    return <nav>
         <h1 className="titulo">Whiskyteca</h1>
 
         <ul className="lista">
@@ -19,10 +16,7 @@ export const NavBar = (props) => {
             <li>
                 <a href="/#">A.A.</a>
             </li>
-            {children}
-        </ul>
-        
-    </nav>
-    <ItemListContainer/></div>
-    ;
+            <CartWidget/>          
+        </ul>        
+    </nav>;
 }
