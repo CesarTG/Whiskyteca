@@ -9,7 +9,7 @@ function App() {
 
   return <><NavBar/>
   <ItemListContainer texto="whiskys para toda la familia!. "/>
-  <ItemCount/> 
+  <ItemCount stock={5} initial={1}/> 
   </>; 
 }
 

@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 
-export const ItemCount = () => {
+export const ItemCount = ({stock,initial}) => {
 
-    const [suma, setSuma] = useState(0)
-    const [resta, setResta] = useState(0)
+    const [total, setSuma] = useState(initial)    
 
 
     return <>
-    <button onClick={() => setSuma (suma + 1) }>  Añadir producto </button>
-    <button onClick={() => setResta (suma - 1) }>  Restar producto </button>
-    <h3>{suma - resta}</h3>  
+    <button disabled={total>=stock} onClick={() => setSuma (total +1) }>  Añadir whisky</button>
+    <button disabled={total<=0} onClick={() => setSuma (total -1) }>  Restar botellas </button>
+    <h3>{total}</h3>  
     </>
  
 };
