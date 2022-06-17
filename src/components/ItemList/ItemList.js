@@ -21,18 +21,16 @@ export const ItemList = () => {
 
     return (<div>
         {licores.map((whisky) => (
-            <Licor key={whisky.id} nombre={whisky.nombre} role={whisky.role} />))}
+            <Licor key={whisky.id} titulo={whisky.nombre} role={whisky.role} />))}
     </div>
-
     );
-
 }
 
-const Licor = ({ whisky }) => {
+const Licor = ({id, nombre , role}) => {
     return (<>
-        <h4>{whisky.id}</h4>
-        <h4>{whisky.nombre}</h4>
-        <h3>{whisky.role}</h3>
+        <h4>{id}</h4>
+        <h4>{nombre}</h4>
+        <h3>{role}</h3>
         <button>Tomar</button>
 
     </>);
