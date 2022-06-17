@@ -12,4 +12,4 @@ const Textual = (props) => {
     return<>
     <h2>{ props.parrafo}</h2>
     </>
-}
+};
