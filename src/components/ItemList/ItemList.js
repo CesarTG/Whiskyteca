@@ -1,38 +1,10 @@
+import React from "react";
+import Item from "../Item/Item";
 
-const licores = [
-    {
-        id: 1,
-        nombre: "Blenders",
-        role: "Suave",
-    },
-    {
-        id: 2,
-        nombre: "Criadores",
-        role: "Fuerte",
-    },
-    {
-        id: 3,
-        nombre: "Tocornal",
-        role: "Asqueroso",
-    },
-];
-
-export const ItemList = () => {
-
-    return (<div>
-        {licores.map((whisky) => (
-            <Licor key={whisky.id} nombre={whisky.nombre} role={whisky.role} />))}
-    </div>
-    );
+function ItemList({ productos }) {
+    return (
+        productos.map(p =>
+            <Item key={p.id} nombre={p.nombre} role={p.role} />))
 }
 
-const Licor = ({id, nombre , role}) => {
-    return (<>
-        <h4>{id}</h4>
-        <h4>{nombre}</h4>
-        <h3>{role}</h3>
-        <button>Tomar 1 Rocks glass</button>
-
-    </>);
-}
-
+export default ItemList;
