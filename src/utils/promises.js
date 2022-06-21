@@ -1,9 +1,15 @@
 const promesa = (time, task) =>{
 
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(task)            
-        }, time);
+        
+        setTimeout(() => { 
+            if (time > 2000){
+                 resolve(task)
+            } else{
+                reject(console.log("Error, estas borracho, tray again tumorrow!"))
+            }                       
+        }, time);       
+       
     })
 }
 
