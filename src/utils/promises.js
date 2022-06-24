@@ -6,7 +6,7 @@ const promesa = (time, task) =>{
             if (time > 2000){
                  resolve(task)
             } else{
-                reject(console.log("Error, estas borracho, tray again tumorrow!"))
+                reject("Error, estas borracho, tray again tumorrow!")
             }                       
         }, time);       
        

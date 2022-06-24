@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import licores from "../../utils/productos";
 import promesa from "../../utils/promises";
 import ItemList from "../ItemList/ItemList";
-/* 
-export const ItemListContainer = (props) => {
+
+export const ItemL = (props) => {
 
     const {texto} = props;   
     return <section>
@@ -16,7 +16,7 @@ const Textual = (props) => {
     return<>
     <h2>{ props.parrafo}</h2>
     </>
-}; */
+}; 
 
 //----------------------------promise
 export function ItemListContainer() {
