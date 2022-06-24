@@ -33,7 +33,8 @@ export function ItemListContainer() {
     return (
     <>
     <ItemList productos={productos} />
-    <Link to="/carrito">Ir a la ebriedad!</Link>     
+    <Link to="/carrito">Ir a la cesta de compras!.</Link>
+    <Link to="/whiskys">Ir a los brebajes!</Link>      
     </>
     );
 };
