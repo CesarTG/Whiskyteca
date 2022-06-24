@@ -1,8 +1,10 @@
+
+
 const productos = [
     {
         id: 1,
         nombre: "Blenders Pride",
-        role: "Suave",
+        role: "Suave", 
     },
     {
         id: 2,

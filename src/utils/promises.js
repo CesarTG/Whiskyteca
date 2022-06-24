@@ -3,7 +3,7 @@ const promesa = (time, task) =>{
     return new Promise((resolve, reject) => {
         
         setTimeout(() => { 
-            if (time > 2000){
+            if (time > 1000){
                  resolve(task)
             } else{
                 reject("Error, estas borracho, tray again tumorrow!")

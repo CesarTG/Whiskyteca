@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 
 export const ItemCount = ({stock,initial}) => {
 
@@ -7,7 +8,8 @@ export const ItemCount = ({stock,initial}) => {
     return <>
     <button disabled={total>=stock} onClick={() => setSuma (total +1) }>  Añadir whisky</button>
     <button disabled={total<=0} onClick={() => setSuma (total -1) }>  Restar botellas </button>
-    <h3>{total}</h3>  
+    <h3>{total}</h3>
+    <Link to="/">Volver a la sobriedad!</Link>     
     </> 
 };
 

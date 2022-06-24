@@ -3,18 +3,19 @@ import licores from "../../utils/productos";
 import promesa from "../../utils/promises";
 import ItemList from "../ItemList/ItemList";
 
+
 export const ItemL = (props) => {
 
     const {texto} = props;   
     return <section>
-        <Textual parrafo={texto}/>
+        <Textual parrafo={texto}/>       
     </section>
 }
 
 const Textual = (props) => {
 
     return<>
-    <h2>{ props.parrafo}</h2>
+    <h2>{ props.parrafo}</h2>    
     </>
 }; 
 
@@ -24,7 +25,7 @@ export function ItemListContainer() {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        promesa(3000, licores)
+        promesa(2000, licores)
             .then(respuesta => setProductos(respuesta))
     }, [productos])
 
