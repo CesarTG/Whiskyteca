@@ -1,6 +1,5 @@
-
-
-const productos = [
+export const productos = [
+    
     {
         id: 1,
         nombre: "Doble-V",
