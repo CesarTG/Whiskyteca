@@ -21,7 +21,7 @@ const Textual = (props) => {
 }; 
 
 //----------------------------promise
-export function ItemListContainer() {
+export function ItemListContainer() {    
 
     const [productos, setProductos] = useState([])
 
