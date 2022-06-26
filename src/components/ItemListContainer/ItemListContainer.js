@@ -26,7 +26,7 @@ export function ItemListContainer() {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        promesa(2000, licores)
+        promesa(1000, licores)
             .then(respuesta => setProductos(respuesta))
     }, [productos])
 

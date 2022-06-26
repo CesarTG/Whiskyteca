@@ -7,10 +7,10 @@ export const ItemDetailContainer = () => {
     const [detalle, setDetalle] = useState([]);
 
     useEffect(() => {
-        const getDetalle = new Promise((resolve, reject) => {
+        const getDetalle = new Promise((resolve) => {
             setTimeout(() => {
                 resolve(licores)
-            }, 2000);
+            }, 1000);
         })
         getDetalle.then(whisky => setDetalle(whisky))
     }, [])

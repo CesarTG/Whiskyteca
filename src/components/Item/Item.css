@@ -8,36 +8,63 @@
     justify-content: space-evenly;   
     align-items: center;   
     padding: 1rem;
-    margin: 1rem;
-    background-color: grey;
+    margin: 2rem;    
+    background-image: url(https://i.blogs.es/a80d47/foto-apertura/1366_2000.jpg);
+    background-position: center ;
+    background-size: cover;        
 }
 
 
 @media only screen and (max-width: 768px){
     .item-container {
         background-color: rgb(22, 22, 22);
-        display: inline-block;        
-        align-items: center;        
+        display: flex;        
+        justify-content: center;       
+        align-items: center; 
+        flex-direction: column;       
     }    
 }
 
 .name {
-    background-color: darkkhaki;
-    width: 9rem;
-    text-align: center;     
+    color: white;    
+    width: 15rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: black; 
+    border-radius: 1rem;    
 }
 
 .role {
-    background-color: darkolivegreen;
-    width: 9rem;
-    text-align: center;   
+    color: white;   
+    width: 15rem;
+    text-align: center; 
+    padding: 0.5rem; 
+    background-color: black; 
+    border-radius: 1rem;
 }
 
-.id{
-    color: red;
-}
+.id {
+    color: white;
+    text-align: center; 
+    padding: 0.5rem; 
+    background-color: black; 
+    border-radius: 1rem;}
 
 .imagen {
     width: 10rem;
     height: auto;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.linkItem {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: gold;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    font-weight: 500;
 }
