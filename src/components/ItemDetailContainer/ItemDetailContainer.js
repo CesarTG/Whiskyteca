@@ -13,7 +13,7 @@ export const ItemDetailContainer = () => {
             }, 1000);
         })
         getDetalle.then(whisky => setDetalle(whisky))
-    }, [])
+    }, [])  
 
     return (<>    
         <ItemDetail detalle={detalle} />

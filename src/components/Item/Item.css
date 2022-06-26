@@ -11,7 +11,7 @@
     margin: 2rem;    
     background-image: url(https://i.blogs.es/a80d47/foto-apertura/1366_2000.jpg);
     background-position: center ;
-    background-size: cover;        
+    background-size: cover;           
 }
 
 
@@ -30,8 +30,8 @@
     width: 15rem;
     text-align: center;
     padding: 0.5rem;
-    background-color: black; 
-    border-radius: 1rem;    
+    background-color: black;       
+    border-radius: 1rem;        
 }
 
 .role {

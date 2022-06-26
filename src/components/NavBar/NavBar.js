@@ -15,9 +15,9 @@ export const NavBar = () => {
                 <NavLink to="/whiskys">Whiskys</NavLink>
             </li>
             <li>
-                <NavLink to="/#">A.A.</NavLink>
+                <NavLink to="/alcoholicos-anonimus">A.A.</NavLink>
             </li>
-            <CartWidget/>          
-        </ul>        
+            <CartWidget />
+        </ul>
     </nav>;
 }
