@@ -15,8 +15,7 @@ export const ItemDetailContainer = () => {
         getDetalle.then(whisky => setDetalle(whisky))
     }, [])
 
-    return (<>
-    
+    return (<>    
         <ItemDetail detalle={detalle} />
     </>
     );
