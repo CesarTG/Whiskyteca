@@ -2,7 +2,7 @@ import React from "react";
 import '../Item/Item.css'
 import { Link } from "react-router-dom"
 
-function Item({ id, nombre, role, imagen, categoria }) {
+function Item({ id, nombre, role, imagen }) {
             
     return <div className="item-container">
         <h4 className="id">ID: {id}</h4>

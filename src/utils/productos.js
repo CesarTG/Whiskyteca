@@ -1,11 +1,10 @@
 export const productos = [
-    
+
     {
         id: 1,
         nombre: "Doble-V",
         role: "Suave",
-        imagen: "https://http2.mlstatic.com/D_NQ_NP_833044-MLA30548552299_052019-O.jpg",
-        categoria:"categoriaId"
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_833044-MLA30548552299_052019-O.jpg"
     },
     {
         id: 2,

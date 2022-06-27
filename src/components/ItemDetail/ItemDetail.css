@@ -9,13 +9,13 @@
     align-items:center;   
     padding: 2rem;
     margin: 1rem;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(153, 153, 153);
 }
 
 
 @media only screen and (max-width: 768px){
     .item-contDetail {
-        background-color: rgb(11, 48, 4);
+        background-color: black;
         display: block;        
         align-items: center;        
     }    
@@ -36,7 +36,8 @@
 .h2-ID{
     width: 100%;
     text-align: center;
-    background-color: darkkhaki;
+    background-color: white;
+    border-radius: 0.5rem;
 }
 
 .img-ID{  

@@ -11,8 +11,6 @@ export const ItemDetail = ({ detalle }) => {
         <p className="p-itemDetail">{`${detalle.role}`}</p>
         <Link to="/">Volver a la sobriedad!</Link>            
     </div>
-
     );
-
 };
 export default ItemDetail;
