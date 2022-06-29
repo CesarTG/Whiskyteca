@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import licores from "../../utils/productos";
 import promesa from "../../utils/promises";
 import ItemList from "../ItemList/ItemList";
-import { Link } from "react-router-dom"
+
 
 
 export const ItemL = (props) => {
@@ -32,8 +32,7 @@ export function ItemListContainer() {
 
     return (
     <>
-    <ItemList productos={productos} />
-    <Link to="/carrito">Ir a la cesta de compras!.</Link>        
+    <ItemList productos={productos} />           
     </>
     );
 };

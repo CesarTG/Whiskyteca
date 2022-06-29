@@ -17,7 +17,7 @@ export const ItemDetailContainer = () => {
             });
         });
         if (id) {
-            getDetalle.then(whisky => setDetalle(whisky.find(producto => producto.id === id /*id? no lo toma*/ )));
+            getDetalle.then(whisky => setDetalle(whisky.find(producto => producto.id === 1 /*id? no lo toma*/ )));
         } else {
             getDetalle.then(whisky => setDetalle(whisky))
         }

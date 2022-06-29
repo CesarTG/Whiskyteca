@@ -1,5 +1,6 @@
 import React from "react";
 import '../ItemDetail/ItemDetail.css'
+import { ItemCount } from '../ItemCount/ItemCount';
 import { Link } from "react-router-dom"
 
 export const ItemDetail = ({ detalle }) => {
@@ -9,6 +10,7 @@ export const ItemDetail = ({ detalle }) => {
         <h2 className="h2-ID">{`${detalle.nombre}`}</h2>
         <img className="img-ID" src={`${detalle.imagen}`} alt="Botella de whisky "/>
         <p className="p-itemDetail">{`${detalle.role}`}</p>
+        <ItemCount stock={5} initial={1} />
         <Link to="/">Volver a la sobriedad!</Link>            
     </div>
     );
