@@ -12,9 +12,6 @@ export const ItemDetail = ({ detalle }) => {
         setCesta(true);
     }
 
-    //marca error a partir de la linea 8 por consola
-
-
     return (<div className="item-contDetail">
         <h2>{`${detalle.id}`}</h2>
         <h2 className="h2-ID">{`${detalle.nombre}`}</h2>
