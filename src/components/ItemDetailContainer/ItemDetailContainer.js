@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
 
-    const [detalle, setDetalle] = useState([]);
+    const [detalle, setDetalle] = useState({});
 
     const { id } = useParams();
     console.log(id)
@@ -17,7 +17,7 @@ export const ItemDetailContainer = () => {
             });
         });
         if (id) {
-            getDetalle.then(whisky => setDetalle(whisky.find(producto => producto.id === 1 /*id? no lo toma*/ )));
+            getDetalle.then(whisky => setDetalle(whisky.find(producto => producto.id === id)));
         } else {
             getDetalle.then(whisky => setDetalle(whisky))
         }
