@@ -51,10 +51,11 @@
     border-radius: 1rem;}
 
 .imagen {
-    width: 10rem;
-    height: auto;
+    width: 15rem;
+    height: 15rem;   
     border-radius: 1rem;
     border: 1px solid black;
+    overflow: hidden;  
 }
 
 .linkItem {
