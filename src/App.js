@@ -16,9 +16,9 @@ function App() {
       <NavBar />
       <carritoContext.Provider>
         <Routes>
-        <Route path='/' element={<ItemListContainer />} />        
+        <Route path='/' element={<ItemListContainer />} />                
         <Route path='/whiskys/:id' element={<ItemDetailContainer />} />
-        <Route path='/whiskys' element={<ItemListContainer />} />            
+        <Route path='/whiskys/:sabor' element={<ItemListContainer />} />                         
       </Routes>
       </carritoContext.Provider>      
     </BrowserRouter>

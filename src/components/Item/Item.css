@@ -54,8 +54,7 @@
     width: 15rem;
     height: 15rem;   
     border-radius: 1rem;
-    border: 1px solid black;
-    overflow: hidden;  
+    border: 1px solid black;     
 }
 
 .linkItem {

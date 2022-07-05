@@ -5,16 +5,15 @@ import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
 
-    const [detalle, setDetalle] = useState({});
+    const [detalle, setDetalle] = useState([]);
 
     const { id } = useParams();
-    console.log(id)
-
+    
     useEffect(() => {
         const getDetalle = new Promise((resolve) => {
             setTimeout(() => {
-                resolve(licores,1000)
-            });
+                resolve(licores)
+            }, 1000);
         });
         if (id) {
             getDetalle.then(whisky => setDetalle(whisky.find(producto => producto.id === id)));
@@ -22,9 +21,9 @@ export const ItemDetailContainer = () => {
             getDetalle.then(whisky => setDetalle(whisky))
         }
 
-    }, [id])   
+    }, [id])
 
-    return (<>
+    return (<>   
         <ItemDetail detalle={detalle} />
     </>
     );
