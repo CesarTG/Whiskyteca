@@ -8,7 +8,7 @@ import React from 'react';
 import { ItemCount } from './components/ItemCount/ItemCount';
 
 export const carritoContext = React.createContext('')
-console.log(carritoContext)
+
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
           <Route path='/whiskys/:id' element={<ItemDetailContainer />} />
-          <Route path='/whiskys/:sabor' element={<ItemListContainer />} />
+          <Route path='/whisky/:sabor' element={<ItemListContainer />} />
           <Route path='/carrito' element={<ItemCount />} />
         </Routes>
       </carritoContext.Provider>

@@ -12,16 +12,16 @@ export const NavBar = () => {
                 <NavLink to="/">Inicio</NavLink>
             </li>
             <li>
-                <NavLink to="/whiskys/fuerte">Fuertes</NavLink>
+                <NavLink to="/whisky/fuerte">Fuertes</NavLink>
             </li>
             <li>
-                <NavLink to="/whiskys/suave">Suaves</NavLink>
+                <NavLink to="/whisky/suave">Suaves</NavLink>
             </li>
             <li>
-                <NavLink to="/whiskys/venenoso">Venenosos</NavLink>
+                <NavLink to="/whisky/venenoso">Venenosos</NavLink>
             </li>
             <li>
-                <NavLink to="/asosiacion-de-alcoholicos">A.A.</NavLink>
+                <NavLink to="/">A.A.</NavLink>
             </li>
             <CartWidget />
         </ul>
