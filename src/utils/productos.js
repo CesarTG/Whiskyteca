@@ -3,7 +3,7 @@ export const productos = [
     {
         id: "1",
         nombre: "Doble-V",
-        role: "Aceituna ácida",
+        role: "Aceite WD-40",
         imagen: "https://http2.mlstatic.com/D_NQ_NP_833044-MLA30548552299_052019-O.jpg",
         sabor:"venenoso"
     },
@@ -38,7 +38,7 @@ export const productos = [
     {
         id: "6",
         nombre: "Jameson",
-        role: "James...Bond",
+        role: "Resaca un lunes por la mañana",
         imagen: "https://http2.mlstatic.com/D_NQ_NP_958253-MLA46846414268_072021-O.webp",
         sabor:"suave"
     }
