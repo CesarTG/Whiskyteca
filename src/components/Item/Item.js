@@ -1,12 +1,12 @@
 import React from "react";
 import { useContext } from "react";
-import { carritoContext } from "../../App";
+import { CarritoContext } from "../../App";
 import '../Item/Item.css'
 import { Link } from "react-router-dom"
 
 function Item({ id, nombre, role, imagen, sabor }) {
 
-    const name = useContext(carritoContext);
+    const name = useContext(CarritoContext);
     console.log("item: ", name)
             
     return <div className="item-container">

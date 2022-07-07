@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { ItemCount } from './components/ItemCount/ItemCount';
 
-export const carritoContext = React.createContext('')
+export const CarritoContext = React.createContext([])
+console.log(CarritoContext)
 
 
 function App() {
@@ -15,14 +16,14 @@ function App() {
   return <>
     <BrowserRouter>
       <NavBar />
-      <carritoContext.Provider value='WHISKY'>
+      <CarritoContext.Provider value='Whisky'>
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
           <Route path='/whiskys/:id' element={<ItemDetailContainer />} />
           <Route path='/whisky/:sabor' element={<ItemListContainer />} />
           <Route path='/carrito' element={<ItemCount />} />
         </Routes>
-      </carritoContext.Provider>
+      </CarritoContext.Provider>
     </BrowserRouter>
   </>;
 }
